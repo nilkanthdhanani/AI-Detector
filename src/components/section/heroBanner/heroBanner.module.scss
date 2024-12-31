@@ -1,0 +1,128 @@
+@import "../../../styles/main.scss";
+
+.heroBanner {
+    padding: 210px 0 140px 0;
+    background-image: url("../../../assets/images/png/heroBg.png");
+    background-size: cover;
+
+    .bannerHead {
+        max-width: 964px;
+        margin: 0 auto 60px auto;
+
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 86px;
+            color: #fff;
+            margin-bottom: 18px;
+
+            .detectTicket {
+                display: inline-block;
+                padding: 3px 25px;
+                background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
+                border-radius: 19px;
+                position: relative;
+
+                &::after,
+                &::before {
+                    content: "";
+                    border-left: 2px solid #fff;
+                    height: 40px;
+                    position: absolute;
+                    top: calc(50% - 20px);
+                }
+
+                &::after {
+                    left: 13px;
+                }
+
+                &::before {
+                    right: 13px;
+                }
+
+                span {
+                    display: block;
+                    padding: 0 22px 0 13px;
+                    border-radius: 20px;
+                    background-color: #060610;
+                }
+            }
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #bfbfbf;
+            text-align: center;
+        }
+    }
+
+    .aiBox {
+        position: relative;
+        background-color: rgba(17, 20, 39, 0.7);
+        border: 1px solid #2f354b;
+        border-radius: 30px;
+        padding: 30px;
+
+        .aiBoxBatch {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 18px;
+        }
+
+        .aiBoxBg {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aiBoxInner {
+            position: relative;
+            z-index: 1;
+            border: 1px solid #3e4a5f;
+            min-height: 540px;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .aiBoxInner1, .aiBoxInner2 {
+                border-right: 1px solid #3e4a5f;
+                padding: 30px;
+                display: grid;
+                grid-template-rows: 1fr auto;
+                gap: 20px;
+
+                .aiBoxInner1Text {
+                    p {
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        color: #bfbfbf;
+                        max-width: 527px;
+                    }
+                }
+
+                .aiBoxInnerBtn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    span {
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

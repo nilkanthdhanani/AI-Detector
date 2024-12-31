@@ -1,0 +1,61 @@
+@import "../../../styles/main.scss";
+
+.header {
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+
+    &.scroll {
+        .headerDiv {
+            border: 1px solid #2f354b;
+        }
+    }
+
+    .headerDiv {
+        padding: 20px 0;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            svg {
+                max-width: 228px;
+            }
+        }
+
+        nav {
+            padding: 16px 30px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            border: 1px solid #2f354b;
+            border-radius: 40px;
+            background-color: #060610;
+
+            a {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                color: #999999;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: #fff;
+                }
+
+                &.active {
+                    color: #fff;
+                }
+            }
+        }
+
+        .loginSignin {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+}
