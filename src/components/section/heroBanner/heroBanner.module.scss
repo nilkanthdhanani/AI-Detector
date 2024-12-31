@@ -93,8 +93,11 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
 
-            .aiBoxInner1, .aiBoxInner2 {
+            .aiBoxInner2 {
                 border-right: 1px solid #3e4a5f;
+            }
+
+            .aiBoxInner1, .aiBoxInner2 {
                 padding: 30px;
                 display: grid;
                 grid-template-rows: 1fr auto;
