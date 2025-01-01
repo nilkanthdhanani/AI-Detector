@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import styles from './header.module.scss'
 import Logo from '@/assets/images/svg/logo'
+import MenuIcon from '@/assets/images/svg/menuIcon'
 
 export default function Header() {
   return (
@@ -25,6 +26,9 @@ export default function Header() {
             <Link href={"/"}>
               <button type="button" className={styles.loginBtn}>LOG IN</button>
             </Link>
+          </div>
+          <div className={styles.menu}>
+            <MenuIcon />
           </div>
         </div>
       </div>

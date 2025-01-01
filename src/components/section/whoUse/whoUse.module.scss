@@ -1,0 +1,182 @@
+@import "../../../styles/main.scss";
+
+.whoUse {
+    margin: 120px 0;
+
+    @media (max-width: 576px) {
+        margin: 60px 0;
+    }
+
+    .WhoUseDiv {
+        border-radius: 30px;
+        background: #111427b2;
+        padding: 120px 20px;
+
+        @media (max-width: 576px) {
+            padding: 40px 0;
+        }
+
+        .WhoUseDivHead {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 70px;
+
+            @media (max-width: 576px) {
+                margin-bottom: 40px;
+            }
+
+            h2 {
+                max-width: 840px;
+                margin-bottom: 16px;
+                background: -webkit-linear-gradient(180deg, #bfabff 0%, #efebff 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 50px;
+                font-weight: 600;
+                line-height: 61px;
+                text-align: center;
+
+                @media (max-width: 576px) {
+                    font-size: 34px;
+                    line-height: 44px;
+                }
+            }
+
+            p {
+                max-width: 705px;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+                color: #bfbfbf;
+
+                @media (max-width: 576px) {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+
+        .whoUseList {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+
+            @media (max-width: 1024px) {
+                grid-template-columns: 1fr;
+            }
+
+            .whoUseBox {
+                padding: 30px;
+                border: 1px solid #2f354b;
+                background: #111427b2;
+                border-radius: 22px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 28px;
+
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                }
+
+                @media (max-width: 576px) {
+                    padding: 20px;
+                }
+
+                .whoUseBoxImg {
+                    flex: 1;
+                    max-height: 340px;
+                    max-width: 300px;
+
+                    @media (max-width: 768px) {
+                        max-width: 100%;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 20px;
+                        object-fit: cover;
+                    }
+                }
+
+                .whoUseBoxContent {
+                    flex: 1;
+                    max-width: 370px;
+
+                    @media (max-width: 768px) {
+                        max-width: 100%;
+                    }
+
+                    .whoUseBoxText {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 80px;
+
+                        @media (max-width: 768px) {
+                            gap: 20px;
+                            align-items: center;
+                            flex-direction: row;
+                            margin-bottom: 20px;
+                        }
+
+                        @media (max-width: 576px) {
+                            flex-direction: column;
+                            align-items: start;
+                        }
+
+                        .whoUseIcon {
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: linear-gradient(85.93deg, #00c0ff 0%, #4218b8 100%);
+
+                            @media (max-width: 576px) {
+                                width: 50px;
+                                height: 50px;
+                            }
+
+                            svg {
+                                width: 40px;
+                                height: 40px;
+
+                                @media (max-width: 576px) {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+
+                        h3 {
+                            font-size: 24px;
+                            font-weight: 500;
+                            line-height: 29px;
+                            color: #ffffff;
+
+                            @media (max-width: 576px) {
+                                font-size: 20px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+
+                    p {
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: #bfbfbf;
+
+                        @media (max-width: 576px) {
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
