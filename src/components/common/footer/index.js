@@ -23,7 +23,9 @@ export default function Footer() {
           </div>
           <div className={styles.footerMain}>
             <div className={styles.footerMainText}>
-              <Logo />
+              <Link href={"/"} className={styles.logo} aria-label='Logo'>
+                <Logo />
+              </Link>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
             <div className={styles.footerMainLinks}>
@@ -49,16 +51,16 @@ export default function Footer() {
           <div className={styles.footerCopyRightDiv}>
             <p>Copyright AI Detector © 2024. All Rights ReservedF</p>
             <div className={styles.footerLink}>
-              <Link href={'https://in.linkedin.com/'} target='_blank'>
+              <Link href={'https://in.linkedin.com/'} target='_blank' aria-label='Linkdin'>
                 <div className={styles.footerLinkDiv}><Linkdin /></div>
               </Link>
-              <Link href={'https://www.facebook.com/'} target='_blank'>
+              <Link href={'https://www.facebook.com/'} target='_blank' aria-label='Facebook'>
                 <div className={styles.footerLinkDiv}><Facebook /></div>
               </Link>
-              <Link href={'https://www.instagram.com/'} target='_blank'>
+              <Link href={'https://www.instagram.com/'} target='_blank' aria-label='Instagram'>
                 <div className={styles.footerLinkDiv}><Instagram /></div>
               </Link>
-              <Link href={'https://x.com/'} target='_blank'>
+              <Link href={'https://x.com/'} target='_blank' aria-label='Twitter'>
                 <div className={styles.footerLinkDiv}><Twitter /></div>
               </Link>
             </div>

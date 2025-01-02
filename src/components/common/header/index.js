@@ -9,7 +9,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.headerDiv}>
-          <Link href={"/"} className={styles.logo}>
+          <Link href={"/"} className={styles.logo} aria-label='Logo'>
             <Logo />
           </Link>
           <nav>
