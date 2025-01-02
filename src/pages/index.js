@@ -1,3 +1,4 @@
+
 import DetectAI from "@/components/section/detectAI";
 import HeroBanner from "@/components/section/heroBanner";
 import Plans from "@/components/section/plans";

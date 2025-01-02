@@ -107,7 +107,7 @@
                 .faqContent {
                     max-height: 0;
                     overflow: hidden;
-                    transition: all 0.8s ease-in-out;
+                    transition: all 0.5s ease-in-out;
 
                     p {
                         padding: 30px 65px 0 30px;
@@ -124,7 +124,7 @@
                     }
                 }
 
-                &:first-child {
+                &.active {
                     .faqHead {
                         svg {
                             transform: rotate(0deg);

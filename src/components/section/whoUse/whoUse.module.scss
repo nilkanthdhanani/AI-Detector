@@ -84,7 +84,8 @@
                 .whoUseBoxImg {
                     flex: 1;
                     max-width: 300px;
-
+                    max-height: 340px;
+                    
                     @media (max-width: 1500px) {
                         max-width: 100%;
                     }
@@ -95,8 +96,7 @@
                         border-radius: 20px;
                         object-fit: cover;
 
-                        @media (max-width: 1024px) {
-                            height: auto;
+                        @media (max-width: 1500px) {
                             aspect-ratio: 1/1;
                         }
 
