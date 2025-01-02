@@ -60,7 +60,7 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 40px;
 
-            @media (max-width: 1024px) {
+            @media (max-width: 768px) {
                 grid-template-columns: 1fr;
             }
 
@@ -94,6 +94,15 @@
                         height: 100%;
                         border-radius: 20px;
                         object-fit: cover;
+
+                        @media (max-width: 1024px) {
+                            height: auto;
+                            aspect-ratio: 1/1;
+                        }
+
+                        @media (max-width: 768px) {
+                            aspect-ratio: unset;
+                        }
                     }
                 }
 
@@ -103,6 +112,10 @@
 
                     @media (max-width: 1500px) {
                         max-width: 100%;
+                    }
+
+                    @media (max-width: 1024px) {
+                        flex: auto;
                     }
 
                     .whoUseBoxText {
@@ -117,12 +130,13 @@
                             margin-bottom: 20px;
                         }
 
-                        @media (max-width: 576px) {
+                        @media (max-width: 1024px) {
                             flex-direction: column;
                             align-items: start;
                         }
 
                         .whoUseIcon {
+                            flex-shrink: 0;
                             width: 80px;
                             height: 80px;
                             border-radius: 50%;

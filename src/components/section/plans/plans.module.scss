@@ -134,7 +134,7 @@
                         gap: 20px;
                     }
 
-                    &:hover {
+                    &:first-child {
                         background: linear-gradient(85.93deg, #00c0ff 0%, #4218b8 100%);
 
                         .planDivTitle {
@@ -146,8 +146,20 @@
 
                         .planDivPrice {
                             button {
-                                background: #fff;
-                                color: #060610;
+                                span {
+                                    color: #060610;
+                                }
+
+                                &::after {
+                                    z-index: 1;
+                                    background: #fff;
+                                }
+
+                                &::before {
+                                    z-index: 2;
+                                    opacity: 0;
+                                    background: #fff;
+                                }
                             }
                         }
                     }
