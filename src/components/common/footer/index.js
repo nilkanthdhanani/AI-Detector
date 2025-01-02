@@ -17,7 +17,7 @@ export default function Footer() {
               <p>Get started to up your business personal AI Detector</p>
             </div>
             <form className={styles.footerForm}>
-              <input type='email' placeholder='Enter your email' />
+              <input type='email' placeholder='Enter your email' required />
               <button type='submit'><span>Subscribe Now</span></button>
             </form>
           </div>
