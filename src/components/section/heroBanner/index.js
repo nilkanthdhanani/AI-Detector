@@ -31,7 +31,7 @@ export default function HeroBanner() {
                         </div>
                         <div className={styles.aiBoxInnerDiv}>
                             <div className={styles.aiBoxInnerDivText}>
-                                <textarea placeholder='To rewrite or check your content, type or paste it here and click on the button below' rows={13}></textarea>
+                                <textarea rows={13}></textarea>
                             </div>
                             <div className={styles.aiBoxInnerBtn2}>
                                 <button type="button"><span>Humanize</span></button>

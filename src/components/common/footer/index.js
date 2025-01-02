@@ -14,7 +14,7 @@ export default function Footer() {
           <div className={styles.footerSubscribe}>
             <div className={styles.footerSubscribeHead}>
               <h2>Subscribe to our newsletter</h2>
-              <p>Sign up for our newsletter to receive updates and exclusive offers</p>
+              <p>Get started to up your business personal AI Detector</p>
             </div>
             <form className={styles.footerForm}>
               <input type='email' placeholder='Enter your email' />
