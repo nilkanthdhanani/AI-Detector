@@ -16,7 +16,7 @@
         }
 
         .footerSubscribeHead {
-            flex: 1;
+            width: 100%;
 
             h2 {
                 font-size: 26px;
@@ -40,11 +40,15 @@
         }
 
         form {
-            flex: 1;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: flex-end;
             gap: 30px;
+
+            @media (max-width: 1024px) {
+                justify-content: flex-start;
+            }
 
             @media (max-width: 576px) {
                 gap: 20px;
@@ -97,8 +101,6 @@
         }
 
         .footerMainText {
-            flex: 1;
-
             p {
                 margin-top: 20px;
                 font-size: 18px;
@@ -115,13 +117,13 @@
         }
 
         .footerMainLinks {
-            flex: 1;
             display: flex;
             justify-content: flex-end;
             gap: 110px;
 
             @media (max-width: 1024px) {
                 justify-content: flex-start;
+                flex-wrap: wrap;
             }
 
             @media (max-width: 576px) {

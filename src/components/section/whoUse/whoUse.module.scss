@@ -70,7 +70,6 @@
                 background: #111427b2;
                 border-radius: 22px;
                 display: flex;
-                flex-wrap: wrap;
                 gap: 28px;
 
                 @media (max-width: 1500px) {
@@ -82,7 +81,7 @@
                 }
 
                 .whoUseBoxImg {
-                    flex: 1;
+                    width: 100%;
                     max-width: 300px;
                     max-height: 340px;
                     
@@ -107,7 +106,7 @@
                 }
 
                 .whoUseBoxContent {
-                    flex: 1;
+                    width: 100%;
                     max-width: 370px;
 
                     @media (max-width: 1500px) {
