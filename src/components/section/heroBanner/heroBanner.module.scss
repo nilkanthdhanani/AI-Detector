@@ -138,57 +138,53 @@
                 grid-template-columns: 1fr;
             }
 
-            .aiBoxInner1 {
+            .aiBoxInnerDiv1 {
                 border-right: 1px solid #3e4a5f;
-                
+
                 @media (max-width: 1024px) {
                     border-right: 0px solid transparent;
                     border-bottom: 1px solid #3e4a5f;
                 }
             }
 
-            .aiBoxInner1,
-            .aiBoxInner2 {
-                height: 540px;
-                display: grid;
-                grid-template-rows: 1fr auto;
+            .aiBoxInnerDiv {
+                .aiBoxInnerDivText {
+                    padding-top: 30px;
 
-                @media (max-width: 576px) {
-                    height: 400px;
-                }
-
-                .aiBoxInner1Text {
-                    padding: 30px;
-                    overflow: auto;
-
-                    @media (max-width: 576px) {
-                        padding: 20px;
-                    }
-
-                    &::-webkit-scrollbar {
-                        width: 5px;
-                        height: 5px;
-                    }
-                    &::-webkit-scrollbar-track {
-                        background: transparent;
-                    }
-                    &::-webkit-scrollbar-thumb {
-                        background: #888;
-                    }
-                    &::-webkit-scrollbar-thumb:hover {
-                        background: #555;
-                    }
-
-                    p {
+                    textarea {
+                        width: 100%;
+                        background-color: transparent;
+                        border: 0;
+                        outline: none;
+                        resize: none;
+                        padding: 0 30px;
                         font-size: 20px;
                         font-weight: 400;
                         line-height: 30px;
-                        color: #bfbfbf;
-                        max-width: 527px;
+                        color: #fff;
+
+                        &::placeholder {
+                            color: #bfbfbf;
+                            max-width: 527px;
+                        }
 
                         @media (max-width: 576px) {
                             font-size: 16px;
                             line-height: 20px;
+                        }
+
+                        &::-webkit-scrollbar {
+                            width: 5px;
+                            height: 5px;
+                        }
+                        &::-webkit-scrollbar-track {
+                            background: transparent;
+                        }
+                        &::-webkit-scrollbar-thumb {
+                            background: #888;
+                        }
+                        &::-webkit-scrollbar-thumb:hover {
+                            background: #555;
                         }
                     }
                 }

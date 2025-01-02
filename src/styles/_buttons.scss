@@ -13,7 +13,7 @@
 
         span {
             position: relative;
-            z-index: 2;
+            z-index: 3;
             font-size: 18px;
             font-weight: 400;
             line-height: 22px;
@@ -48,12 +48,12 @@
         }
 
         &::after {
-            z-index: -1;
+            z-index: 1;
             background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
         }
 
         &::before {
-            z-index: 1;
+            z-index: 2;
             opacity: 0;
             background: linear-gradient(82deg, #421bb8 0%, #00c0ff 100%);
         }
