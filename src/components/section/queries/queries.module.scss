@@ -1,0 +1,162 @@
+@import "../../../styles/main.scss";
+
+.queries {
+    .queriesHead {
+        max-width: 840px;
+        margin: 0 auto 60px auto;
+
+        @media (max-width: 576px) {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            margin-bottom: 16px;
+            background: -webkit-linear-gradient(180deg, #bfabff 0%, #efebff 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 61px;
+            text-align: center;
+
+            @media (max-width: 576px) {
+                font-size: 34px;
+                line-height: 44px;
+            }
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            color: #bfbfbf;
+
+            @media (max-width: 576px) {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    .queriesList {
+        display: flex;
+        gap: 80px;
+
+        @media (max-width: 1024px) {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 40px;
+        }
+
+        @media (max-width: 576px) {
+            gap: 20px;
+        }
+
+        .queriesListDiv {
+            flex: 1;
+            max-width: 840px;
+
+            .faqDiv {
+                margin-bottom: 40px;
+
+                @media (max-width: 576px) {
+                    margin-bottom: 20px;
+                }
+
+                .faqHead {
+                    padding: 30px;
+                    background: #111427b2;
+                    border: 1px solid #2f354b;
+                    border-radius: 18px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 20px;
+                    cursor: pointer;
+
+                    @media (max-width: 576px) {
+                        padding: 20px;
+                    }
+
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        color: #fff;
+
+                        @media (max-width: 576px) {
+                            font-size: 18px;
+                            line-height: 20px;
+                        }
+                    }
+
+                    .faqIcon {
+                        svg {
+                            cursor: pointer;
+                            transform: rotate(-135deg);
+                            transition: all 0.5s ease-in-out;
+
+                            @media (max-width: 576px) {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+
+                .faqContent {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: all 0.8s ease-in-out;
+
+                    p {
+                        padding: 30px 65px 0 30px;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        color: #b2b2b5;
+
+                        @media (max-width: 576px) {
+                            padding: 20px 20px 0 20px;
+                            font-size: 16px;
+                            line-height: 26px;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .faqHead {
+                        svg {
+                            transform: rotate(0deg);
+                            transition: all 0.5s ease-in-out;
+                        }
+                    }
+
+                    .faqContent {
+                        max-height: 100vh;
+                        transition: all 0.8s ease-in-out;
+                    }
+                }
+            }
+        }
+
+        .queriesListImg {
+            flex: 1;
+            max-width: 640px;
+            max-height: 570px;
+
+            img {
+                height: auto;
+                max-height: 100%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                border-radius: 30px;
+
+                @media (max-width: 1024px) {
+                    aspect-ratio: unset;
+                }
+            }
+        }
+    }
+}

@@ -38,7 +38,7 @@ export default function Powerful() {
                             <div className={styles.powerfulDivHead}>
                                 <h2>Powerful Features for Accurate AI Detection</h2>
                                 <p>Our AI detection tool is designed for precision and ease of use, helping you detect AI-generated content with confidence. Each feature is crafted to ensure reliability, speed, and security in your detection process.</p>
-                                <button type="button">Trial For Free Now</button>
+                                <button type="button"><span>Trial For Free Now</span></button>
                             </div>
                             <div className={styles.powerfulDivList}>
                                 {powerfulList.map((item, index) => (

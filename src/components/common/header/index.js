@@ -21,10 +21,10 @@ export default function Header() {
           </nav>
           <div className={styles.loginSignin}>
             <Link href={"/"}>
-              <button type="button" className={styles.signinBtn}>SIGN IN</button>
+              <button type="button" className={styles.signinBtn}><span>SIGN IN</span></button>
             </Link>
             <Link href={"/"}>
-              <button type="button" className={styles.loginBtn}>LOG IN</button>
+              <button type="button" className={styles.loginBtn}><span>LOG IN</span></button>
             </Link>
           </div>
           <div className={styles.menu}>

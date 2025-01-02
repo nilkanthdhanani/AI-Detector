@@ -26,14 +26,14 @@ export default function HeroBanner() {
                             </div>
                             <div className={styles.aiBoxInnerBtn}>
                                 <span>0/1000</span>
-                                <button type="button">Check For AI</button>
+                                <button type="button"><span>Check For AI</span></button>
                             </div>
                         </div>
                         <div className={styles.aiBoxInner2}>
                             <div className={styles.aiBoxInner2Text}>
                             </div>
                             <div className={styles.aiBoxInnerBtn2}>
-                                <button type="button">Humanize</button>
+                                <button type="button"><span>Humanize</span></button>
                             </div>
                         </div>
                     </div>

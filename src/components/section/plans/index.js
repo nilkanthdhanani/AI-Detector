@@ -72,8 +72,8 @@ export default function Plans() {
                         <div className={styles.plansDivBoxes}>
                             <div className={styles.plansDivBox1}>
                                 <div className={styles.plansDivBox1Select}>
-                                    <button type="button">Monthly</button>
-                                    <button type="button">Yearly</button>
+                                    <button type="button"><span>Monthly</span></button>
+                                    <button type="button"><span>Yearly</span></button>
                                 </div>
                                 <h3>Features</h3>
                                 <div className={styles.feturesDiv}>
@@ -97,7 +97,7 @@ export default function Plans() {
                                                 <h4>{item.price}</h4>
                                                 <p>{item.time}</p>
                                             </div>
-                                            <button type="button">Choose Plan</button>
+                                            <button type="button"><span>Choose Plan</span></button>
                                         </div>
                                     </div>
                                 ))}

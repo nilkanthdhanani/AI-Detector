@@ -6,13 +6,24 @@
     button {
         padding: 16px 30px;
         border-radius: 60px;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 22px;
-        color: #fff;
         cursor: pointer;
         border: none;
-        // transition: all 0.3s ease-in-out;
+        position: relative;
+        background-color: transparent;
+
+        span {
+            position: relative;
+            z-index: 2;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #fff;
+
+            @media (max-width: 576px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
 
         @media (max-width: 1120px) {
             padding: 15px 20px;
@@ -20,40 +31,86 @@
 
         @media (max-width: 576px) {
             padding: 12px 18px;
-            font-size: 16px;
-            line-height: 20px;
         }
     }
 
     .signinBtn {
-        background: linear-gradient(85deg, #00c0ff 0%, #4218b8 100%);
-        border: 2px solid #0e1020;
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 60px;
+            transition: all 0.6s ease-in-out;
+        }
 
-        // &:hover {
-        //     background: #0e1020;
-        //     border: 2px solid #0076ff;
-        // }
+        &::after {
+            z-index: -1;
+            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
+        }
+
+        &::before {
+            z-index: 1;
+            opacity: 0;
+            background: linear-gradient(82deg, #421bb8 0%, #00c0ff 100%);
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+        }
     }
 
     .loginBtn {
-        background: #0e1020;
-        border: 2px solid #0076ff;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            border-radius: 60px;
+            opacity: 0;
+            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
+            transition: all 0.6s ease-in-out;
+        }
 
-        // &:hover {
-        //     border: 2px solid #0e1020;
-        //     background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
-        // }
+        &::before {
+            content: "";
+            border-radius: 60px;
+            padding: 2px;
+            z-index: 2;
+            inset: 0;
+            position: absolute;
+            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
+            mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
     }
 }
 
 .aiBoxBatch {
     button {
+        position: relative;
         padding: 11px 20px;
         border-radius: 68px;
         color: #fff;
         cursor: pointer;
-        border: 2px solid #0076ff;
-        background: #0e1020;
+        border: none;
+        background-color: transparent;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -64,9 +121,13 @@
 
         svg {
             max-width: 30px;
+            position: relative;
+            z-index: 2;
         }
 
         span {
+            position: relative;
+            z-index: 2;
             text-transform: uppercase;
             font-size: 18px;
             font-weight: 400;
@@ -78,33 +139,180 @@
                 line-height: 20px;
             }
         }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            border-radius: 60px;
+            opacity: 0;
+            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
+            transition: all 0.6s ease-in-out;
+        }
+
+        &::before {
+            content: "";
+            border-radius: 60px;
+            padding: 2px;
+            z-index: 2;
+            inset: 0;
+            position: absolute;
+            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
+            mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
     }
 }
 
 .aiBoxInnerBtn {
     button {
+        position: relative;
         padding: 16px 30px;
         border-radius: 68px;
-        color: #fff;
         cursor: pointer;
-        border: 2px solid #0076ff;
-        background: #0e1020;
-        text-transform: uppercase;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 22px;
-        color: #fff;
+        border: none;
+        background-color: transparent;
 
         @media (max-width: 576px) {
             padding: 12px 18px;
-            font-size: 16px;
-            line-height: 20px;
+        }
+
+        svg {
+            max-width: 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        span {
+            position: relative;
+            z-index: 2;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #fff;
+
+            @media (max-width: 576px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            border-radius: 60px;
+            opacity: 0;
+            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
+            transition: all 0.6s ease-in-out;
+        }
+
+        &::before {
+            content: "";
+            border-radius: 60px;
+            padding: 2px;
+            z-index: 2;
+            inset: 0;
+            position: absolute;
+            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
+            mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
         }
     }
 }
 
 .aiBoxInnerBtn2,
 .powerfulDivHead,
+.footerForm {
+    button {
+        padding: 16px 30px;
+        border-radius: 68px;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
+        text-transform: uppercase;
+        background-color: transparent;
+        position: relative;
+
+        @media (max-width: 1120px) {
+            padding: 15px 20px;
+        }
+
+        @media (max-width: 576px) {
+            padding: 12px 18px;
+        }
+
+        span {
+            position: relative;
+            z-index: 3;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #fff;
+
+            @media (max-width: 576px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 60px;
+            transition: all 0.6s ease-in-out;
+        }
+
+        &::after {
+            z-index: 1;
+            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
+        }
+
+        &::before {
+            z-index: 2;
+            opacity: 0;
+            background: linear-gradient(82deg, #421bb8 0%, #00c0ff 100%);
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
 .planDivPrice {
     button {
         padding: 16px 30px;
@@ -131,22 +339,60 @@
     button {
         padding: 16px 30px;
         border-radius: 28px;
-        background: linear-gradient(85.93deg, #00c0ff 0%, #4218b8 100%);
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 24px;
-        color: #fff;
+        background: transparent;
         cursor: pointer;
         border: none;
+        position: relative;
 
         @media (max-width: 576px) {
             padding: 12px 18px;
-            font-size: 16px;
-            line-height: 20px;
         }
 
-        &:nth-child(2) {
-            background: transparent;
+        span {
+            position: relative;
+            z-index: 3;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #fff;
+
+            @media (max-width: 576px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        &:first-child {
+            background-color: transparent;
+
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 60px;
+                transition: all 0.6s ease-in-out;
+            }
+
+            &::after {
+                z-index: 1;
+                background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
+            }
+
+            &::before {
+                z-index: 2;
+                opacity: 0;
+                background: linear-gradient(82deg, #421bb8 0%, #00c0ff 100%);
+            }
+
+            &:hover {
+                &::before {
+                    opacity: 1;
+                }
+            }
         }
     }
 }

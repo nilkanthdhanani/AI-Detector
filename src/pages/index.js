@@ -2,6 +2,7 @@ import DetectAI from "@/components/section/detectAI";
 import HeroBanner from "@/components/section/heroBanner";
 import Plans from "@/components/section/plans";
 import Powerful from "@/components/section/powerful";
+import Queries from "@/components/section/queries";
 import Review from "@/components/section/review";
 import Update from "@/components/section/update";
 import WhoUse from "@/components/section/whoUse";
@@ -24,7 +25,8 @@ export default function Home() {
       <WhoUse />
       <Review />
       <Plans />
-      {/* <Update /> */}
+      <Queries />
+      <Update />
     </>
   );
 }
