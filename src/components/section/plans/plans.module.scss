@@ -154,15 +154,18 @@
                                     color: #060610;
                                 }
 
-                                &::after {
-                                    z-index: 1;
+                                &::after, &::before {
                                     background: #fff;
                                 }
-
-                                &::before {
-                                    z-index: 2;
-                                    opacity: 0;
-                                    background: #fff;
+                                
+                                &:hover {
+                                    &::before {
+                                        background: #fff;
+                                    }
+                                    &::after {
+                                        opacity: 1;
+                                        background: #fff;
+                                    }
                                 }
                             }
                         }
