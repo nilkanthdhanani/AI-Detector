@@ -22,7 +22,7 @@ export default function HeroBanner() {
                     <div className={styles.aiBoxInner}>
                         <div className={` ${styles.aiBoxInnerDiv} ${styles.aiBoxInnerDiv1}`}>
                             <div className={styles.aiBoxInnerDivText}>
-                                <textarea placeholder='To rewrite or check your content, type or paste it here and click on the button below' rows={13}></textarea>
+                                <textarea placeholder='To rewrite or check your content, type or paste it here and click on the button below' rows={13} aria-label='text box'></textarea>
                             </div>
                             <div className={styles.aiBoxInnerBtn}>
                                 <div className={styles.aiBoxInnerBtnText}>
@@ -33,7 +33,7 @@ export default function HeroBanner() {
                         </div>
                         <div className={styles.aiBoxInnerDiv}>
                             <div className={styles.aiBoxInnerDivText}>
-                                <textarea rows={13}></textarea>
+                                <textarea rows={13} aria-label='text box'></textarea>
                             </div>
                             <div className={styles.aiBoxInnerBtn2}>
                                 <button type="button"><span>Humanize</span></button>

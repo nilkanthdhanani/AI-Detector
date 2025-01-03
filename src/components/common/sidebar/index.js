@@ -14,7 +14,7 @@ export default function Sidebar() {
             <div className={styles.sidebarDiv}>
                 <div>
                     <div className={styles.sidebarDivHead}>
-                        <Link href={"/"}>
+                        <Link href={"/"} aria-label='Logo'>
                             <Logo />
                         </Link>
                         <div className={styles.closeBtn}>
