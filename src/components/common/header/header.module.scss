@@ -1,10 +1,9 @@
 @import "../../../styles/main.scss";
 
 .header {
-    padding: 20px 0;
+    padding: 40px 0;
 
     .headerDiv {
-        padding: 20px 0;
         border-radius: 10px;
         display: flex;
         justify-content: space-between;
@@ -12,14 +11,14 @@
         gap: 20px;
 
         .logo {
-            min-width: 270px;
+            min-width: 250px;
 
-            @media (max-width: 1150px) {
+            @media (max-width: 1100px) {
                 min-width: auto;
             }
 
             svg {
-                max-width: 228px;
+                max-width: 200px;
             }
         }
 
@@ -32,16 +31,12 @@
             border-radius: 40px;
             background-color: #060610;
 
-            @media (max-width: 1150px) {
-                gap: 20px;
-            }
-
             @media (max-width: 1024px) {
                 display: none;
             }
 
             a {
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 500;
                 line-height: 22px;
                 color: #999999;
@@ -60,11 +55,7 @@
         .loginSignin {
             display: flex;
             align-items: center;
-            gap: 30px;
-
-            @media (max-width: 1150px) {
-                gap: 10px;
-            }
+            gap: 20px;
 
             @media (max-width: 1024px) {
                 display: none;

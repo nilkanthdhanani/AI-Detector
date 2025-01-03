@@ -1,7 +1,7 @@
 @import "../../../styles/main.scss";
 
 .heroBanner {
-    padding: 115px 0 140px 0;
+    padding: 100px 0 120px 0;
 
     @media (max-width: 576px) {
         padding: 80px 0;
@@ -13,21 +13,20 @@
 
         h1 {
             text-align: center;
-            font-size: 60px;
+            font-size: 50px;
             font-weight: 600;
-            line-height: 86px;
+            line-height: 65px;
             color: #fff;
-            margin-bottom: 18px;
+            margin-bottom: 10px;
 
             @media (max-width: 576px) {
-                font-size: 40px;
-                line-height: 56px;
-                margin-bottom: 12px;
+                font-size: 36px;
+                line-height: 45px;
             }
 
             .detectTicket {
                 display: inline-block;
-                padding: 3px 25px;
+                padding: 3px 20px;
                 background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
                 border-radius: 19px;
                 position: relative;
@@ -51,7 +50,7 @@
                 }
 
                 &::after {
-                    left: 13px;
+                    left: 10px;
 
                     @media (max-width: 576px) {
                         left: 8px;
@@ -59,7 +58,7 @@
                 }
 
                 &::before {
-                    right: 13px;
+                    right: 10px;
 
                     @media (max-width: 576px) {
                         right: 8px;
@@ -68,7 +67,7 @@
 
                 span {
                     display: block;
-                    padding: 11px 22px 10px 13px;
+                    padding: 0 20px;
                     border-radius: 20px;
                     line-height: 73px;
                     background-color: #060610;
@@ -82,15 +81,15 @@
         }
 
         p {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 400;
-            line-height: 24px;
+            line-height: 28px;
             color: #bfbfbf;
             text-align: center;
 
             @media (max-width: 576px) {
                 font-size: 16px;
-                line-height: 20px;
+                line-height: 24px;
             }
         }
     }
@@ -161,9 +160,9 @@
                         outline: none;
                         resize: none;
                         padding: 0 30px;
-                        font-size: 20px;
+                        font-size: 18px;
                         font-weight: 400;
-                        line-height: 30px;
+                        line-height: 28px;
                         color: #fff;
 
                         &::placeholder {
@@ -173,7 +172,7 @@
 
                         @media (max-width: 576px) {
                             font-size: 16px;
-                            line-height: 20px;
+                            line-height: 24px;
                         }
 
                         &::-webkit-scrollbar {
@@ -206,14 +205,14 @@
 
                     .aiBoxInnerBtnText {
                         span {
-                            font-size: 20px;
+                            font-size: 18px;
                             font-weight: 400;
-                            line-height: 24px;
+                            line-height: 28px;
                             color: #fff;
 
                             @media (max-width: 576px) {
                                 font-size: 16px;
-                                line-height: 20px;
+                                line-height: 24px;
                             }
                         }
                     }

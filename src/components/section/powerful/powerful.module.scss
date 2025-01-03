@@ -31,13 +31,13 @@
                 width: 100%;
 
                 h2 {
-                    margin-bottom: 16px;
+                    margin-bottom: 15px;
                     background: -webkit-linear-gradient(180deg, #bfabff 0%, #efebff 100%);
                     background-clip: text;
                     -webkit-text-fill-color: transparent;
-                    font-size: 50px;
+                    font-size: 40px;
                     font-weight: 600;
-                    line-height: 61px;
+                    line-height: 50px;
 
                     @media (max-width: 576px) {
                         font-size: 34px;
@@ -46,15 +46,13 @@
                 }
 
                 p {
-                    font-size: 20px;
+                    font-size: 16px;
                     font-weight: 400;
-                    line-height: 30px;
+                    line-height: 26px;
                     color: #bfbfbf;
-                    margin-bottom: 42px;
+                    margin-bottom: 40px;
 
                     @media (max-width: 576px) {
-                        font-size: 16px;
-                        line-height: 26px;
                         margin-bottom: 30px;
                     }
                 }
@@ -83,7 +81,7 @@
 
                     .powerfulDivList1Head {
                         width: 100%;
-                        max-width: 350px;
+                        max-width: 400px;
 
                         h3 {
                             font-size: 24px;
@@ -107,16 +105,11 @@
                     }
 
                     p {
-                        max-width: 450px;
-                        font-size: 18px;
+                        max-width: 400px;
+                        font-size: 16px;
                         font-weight: 400;
-                        line-height: 30px;
+                        line-height: 26px;
                         color: #bfbfbf;
-
-                        @media (max-width: 576px) {
-                            font-size: 16px;
-                            line-height: 26px;
-                        }
                     }
                 }
             }

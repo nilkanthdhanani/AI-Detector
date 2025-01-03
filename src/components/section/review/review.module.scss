@@ -2,7 +2,7 @@
 
 .review {
     .reviewHead {
-        max-width: 840px;
+        max-width: 600px;
         margin: 0 auto 60px auto;
 
         @media (max-width: 576px) {
@@ -10,13 +10,13 @@
         }
 
         h2 {
-            margin-bottom: 16px;
+            margin-bottom: 15px;
             background: -webkit-linear-gradient(180deg, #bfabff 0%, #efebff 100%);
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-size: 50px;
+            font-size: 40px;
             font-weight: 600;
-            line-height: 61px;
+            line-height: 50px;
             text-align: center;
 
             @media (max-width: 576px) {

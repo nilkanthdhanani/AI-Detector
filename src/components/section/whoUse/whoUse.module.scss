@@ -1,10 +1,10 @@
 @import "../../../styles/main.scss";
 
 .whoUse {
-    margin: 120px 0;
+    margin: 100px 0;
 
     @media (max-width: 576px) {
-        margin: 60px 0;
+        margin: 80px 0;
     }
 
     .WhoUseDiv {
@@ -17,7 +17,7 @@
         }
 
         .WhoUseDivHead {
-            margin: 0 auto 70px auto;
+            margin: 0 auto 60px auto;
             max-width: 840px;
             text-align: center;
 
@@ -26,13 +26,13 @@
             }
 
             h2 {
-                margin-bottom: 16px;
+                margin-bottom: 15px;
                 background: -webkit-linear-gradient(180deg, #bfabff 0%, #efebff 100%);
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
-                font-size: 50px;
+                font-size: 40px;
                 font-weight: 600;
-                line-height: 61px;
+                line-height: 50px;
 
                 @media (max-width: 576px) {
                     font-size: 34px;
@@ -41,10 +41,10 @@
             }
 
             p {
-                max-width: 705px;
-                font-size: 20px;
+                max-width: 525px;
+                font-size: 16px;
                 font-weight: 400;
-                line-height: 30px;
+                line-height: 26px;
                 color: #bfbfbf;
                 margin: 0 auto;
 
@@ -120,7 +120,7 @@
                     .whoUseBoxText {
                         display: flex;
                         flex-direction: column;
-                        gap: 80px;
+                        gap: 60px;
 
                         @media (max-width: 1500px) {
                             gap: 20px;
@@ -136,8 +136,8 @@
 
                         .whoUseIcon {
                             flex-shrink: 0;
-                            width: 80px;
-                            height: 80px;
+                            width: 70px;
+                            height: 70px;
                             border-radius: 50%;
                             display: flex;
                             align-items: center;
@@ -150,8 +150,8 @@
                             }
 
                             svg {
-                                width: 40px;
-                                height: 40px;
+                                width: 30px;
+                                height: 30px;
 
                                 @media (max-width: 576px) {
                                     width: 20px;
@@ -174,9 +174,9 @@
                     }
 
                     p {
-                        font-size: 18px;
+                        font-size: 16px;
                         font-weight: 400;
-                        line-height: 28px;
+                        line-height: 26px;
                         color: #bfbfbf;
                         margin-top: 12px;
 
