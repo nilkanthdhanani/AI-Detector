@@ -109,6 +109,10 @@
                 color: #b2b2b5;
                 max-width: 550px;
 
+                @media (max-width: 1024px) {
+                    max-width: 750px;
+                }
+
                 @media (max-width: 576px) {
                     font-size: 16px;
                     line-height: 20px;
@@ -122,7 +126,8 @@
             gap: 110px;
 
             @media (max-width: 1024px) {
-                justify-content: flex-start;
+                max-width: 600px;
+                justify-content: space-between;
                 flex-wrap: wrap;
             }
 
