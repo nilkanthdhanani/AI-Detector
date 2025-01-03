@@ -102,6 +102,93 @@
     }
 }
 
+.loginSignin2 {
+    button {
+        padding: 16px 30px;
+        border-radius: 60px;
+        cursor: pointer;
+        border: none;
+        position: relative;
+        background-color: transparent;
+
+        span {
+            position: relative;
+            z-index: 3;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #fff;
+        }
+    }
+
+    .signinBtn {
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 60px;
+            transition: all 0.6s ease-in-out;
+        }
+
+        &::after {
+            z-index: 1;
+            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
+        }
+
+        &::before {
+            z-index: 2;
+            opacity: 0;
+            background: linear-gradient(82deg, #421bb8 0%, #00c0ff 100%);
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+
+    .loginBtn {
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            border-radius: 60px;
+            opacity: 0;
+            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
+            transition: all 0.6s ease-in-out;
+        }
+
+        &::before {
+            content: "";
+            border-radius: 60px;
+            padding: 2px;
+            z-index: 2;
+            inset: 0;
+            position: absolute;
+            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
+            mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}
+
 .aiBoxBatch {
     button {
         position: relative;

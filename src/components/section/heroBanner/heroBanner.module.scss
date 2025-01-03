@@ -71,8 +71,9 @@
 
                 span {
                     display: block;
-                    padding: 0 22px 0 13px;
+                    padding: 11px 22px 10px 13px;
                     border-radius: 20px;
+                    line-height: 73px;
                     background-color: #060610;
                 }
             }
@@ -201,15 +202,17 @@
                         padding: 20px;
                     }
 
-                    span {
-                        font-size: 20px;
-                        font-weight: 400;
-                        line-height: 24px;
-                        color: #fff;
+                    .aiBoxInnerBtnText {
+                        span {
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: #fff;
 
-                        @media (max-width: 576px) {
-                            font-size: 16px;
-                            line-height: 20px;
+                            @media (max-width: 576px) {
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
                         }
                     }
                 }

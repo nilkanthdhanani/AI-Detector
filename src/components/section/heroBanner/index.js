@@ -25,7 +25,9 @@ export default function HeroBanner() {
                                 <textarea placeholder='To rewrite or check your content, type or paste it here and click on the button below' rows={13}></textarea>
                             </div>
                             <div className={styles.aiBoxInnerBtn}>
-                                <span>0/1000</span>
+                                <div className={styles.aiBoxInnerBtnText}>
+                                    <span>0/1000</span>
+                                </div>
                                 <button type="button"><span>Check For AI</span></button>
                             </div>
                         </div>

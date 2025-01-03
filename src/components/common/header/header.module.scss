@@ -22,6 +22,12 @@
         gap: 20px;
 
         .logo {
+            min-width: 270px;
+
+            @media (max-width: 1150px) {
+                min-width: auto;
+            }
+
             svg {
                 max-width: 228px;
             }
@@ -36,7 +42,7 @@
             border-radius: 40px;
             background-color: #060610;
 
-            @media (max-width: 1120px) {
+            @media (max-width: 1150px) {
                 gap: 20px;
             }
 
@@ -66,7 +72,7 @@
             align-items: center;
             gap: 30px;
 
-            @media (max-width: 1120px) {
+            @media (max-width: 1150px) {
                 gap: 10px;
             }
 

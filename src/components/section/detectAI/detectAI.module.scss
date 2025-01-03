@@ -149,7 +149,11 @@
                 }
 
                 .imgWrapper {
-                    padding: 20px;
+                    height: 100px;
+                    width: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     margin-bottom: 50px;
                     background: #111427b2;
                     border-radius: 22%;
