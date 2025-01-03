@@ -1,0 +1,44 @@
+@import "../../../styles/main.scss";
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    // left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    &.active {
+        left: 0;
+    }
+
+    .sidebarDiv {
+        height: 100%;
+        padding: 40px 20px;
+        max-width: 400px;
+        background: #111427;
+
+        .sidebarDivHead {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 40px;
+
+            a {
+                svg {
+                    max-width: 200px;
+                    height: auto;
+                }
+            }
+
+            .closeBtn {
+                svg {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
