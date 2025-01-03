@@ -1,6 +1,7 @@
 import TrueIcon from '@/assets/images/svg/trueIcon'
 import styles from './plans.module.scss'
 import WrongIcon from '@/assets/images/svg/wrongIcon'
+import { useState } from 'react';
 
 const featuresList = [
     {
@@ -61,6 +62,12 @@ const plans = [
 ];
 
 export default function Plans() {
+    const [active, setActive] = useState(0);
+
+    const toggleActive = (index) => {
+        setActive (active === index ? null : index);
+    }
+    
     return (
         <section className={styles.plans}>
             <div className={styles.container2}>
@@ -87,9 +94,9 @@ export default function Plans() {
                             </div>
                             <div className={styles.plansDivBox2}>
                                 {plans.map((item, index) => (
-                                    <div className={styles.planDiv} key={index}>
+                                    <div className={`${styles.planDiv} ${active === index ? styles.active : ""}`} key={index}>
                                         <div className={styles.planDivTitle}>
-                                            <div className={styles.radio}></div>
+                                            <div className={styles.radio} onClick={() => toggleActive(index)}></div>
                                             <h3>{item.title}</h3>
                                         </div>
                                         <div className={styles.planDivPrice}>

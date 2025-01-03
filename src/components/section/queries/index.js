@@ -2,6 +2,7 @@ import { queriesImg } from '@/assets/images/image'
 import styles from './queries.module.scss'
 import Image from 'next/image'
 import WrongIcon from '@/assets/images/svg/wrongIcon'
+import { useState } from 'react'
 
 const faq = [
     {
@@ -23,6 +24,12 @@ const faq = [
 ]
 
 export default function Queries() {
+    const [active, setActive] = useState(0);
+
+    const toggleActive = (index) => {
+        setActive (active === index ? null : index);
+    };
+
     return (
         <section className={styles.queries}>
             <div className={styles.container}>
@@ -33,10 +40,10 @@ export default function Queries() {
                 <div className={styles.queriesList}>
                     <div className={styles.queriesListDiv}>
                         {faq.map((item, index) => (
-                            <div className={styles.faqDiv} key={index}>
+                            <div className={`${styles.faqDiv} ${(active === index ? styles.active : "")}`} key={index}>
                                 <div className={styles.faqHead}>
                                     <h3>{item.title}</h3>
-                                    <div className={styles.faqIcon}>
+                                    <div className={styles.faqIcon} onClick={() => toggleActive(index)}>
                                         <WrongIcon />
                                     </div>
                                 </div>
