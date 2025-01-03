@@ -1,10 +1,7 @@
 @import "../../../styles/main.scss";
 
 .heroBanner {
-    padding: 210px 0 140px 0;
-    background-image: url("../../../assets/images/webp/heroBg.webp");
-    background-size: cover;
-    background-position: center;
+    padding: 115px 0 140px 0;
 
     @media (max-width: 576px) {
         padding: 150px 0 80px 0;

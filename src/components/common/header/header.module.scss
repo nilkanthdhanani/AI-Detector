@@ -2,16 +2,6 @@
 
 .header {
     padding: 20px 0;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 99;
-
-    &.scroll {
-        .headerDiv {
-            border: 1px solid #2f354b;
-        }
-    }
 
     .headerDiv {
         padding: 20px 0;

@@ -49,7 +49,7 @@ export default function Footer() {
       <div className={styles.footerCopyRight}>
         <div className={styles.container}>
           <div className={styles.footerCopyRightDiv}>
-            <p>Copyright AI Detector © 2024. All Rights ReservedF</p>
+            <p>Copyright AI Detector © 2024. All Rights Reserved</p>
             <div className={styles.footerLink}>
               <Link href={'https://in.linkedin.com/'} target='_blank' aria-label='Linkdin'>
                 <div className={styles.footerLinkDiv}><Linkdin /></div>
