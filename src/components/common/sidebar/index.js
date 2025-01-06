@@ -2,11 +2,6 @@ import Logo from '@/assets/images/svg/logo'
 import styles from './sidebar.module.scss'
 import Link from 'next/link'
 import CloseIcon from '@/assets/images/svg/closeIcon'
-import HomeIcon from '@/assets/images/svg/homeIcon'
-import HumanizeIcon from '@/assets/images/svg/humanizeIcon'
-import PriceIcon from '@/assets/images/svg/priceIcon'
-import BlogIcon from '@/assets/images/svg/blogIcon'
-import ContactIcon from '@/assets/images/svg/contactIcon'
 import { usePathname } from 'next/navigation'
 
 export default function Sidebar({ sidebarOpen, sidebarClose }) {
@@ -25,11 +20,11 @@ export default function Sidebar({ sidebarOpen, sidebarClose }) {
                         </div>
                     </div>
                     <nav>
-                        <Link href={"/"} className={pathname === "/" ? styles.active : ""}><HomeIcon /> Home</Link>
-                        <Link href={"/"}><HumanizeIcon /> Humanize</Link>
-                        <Link href={"/"}><PriceIcon /> Pricing</Link>
-                        <Link href={"/"}><BlogIcon /> Blog</Link>
-                        <Link href={"/"}><ContactIcon /> Contact Us</Link>
+                        <Link href={"/"} className={pathname === "/" ? styles.active : ""}>Home</Link>
+                        <Link href={"/"}>Humanize</Link>
+                        <Link href={"/"}>Pricing</Link>
+                        <Link href={"/"}>Blog</Link>
+                        <Link href={"/"}>Contact Us</Link>
                     </nav>
                 </div>
                 <div className={styles.loginSignin2}>

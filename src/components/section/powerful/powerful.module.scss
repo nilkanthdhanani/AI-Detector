@@ -76,14 +76,10 @@
                 .powerfulDivList1 {
                     display: flex;
                     justify-content: space-between;
+                    flex-wrap: wrap;
                     gap: 20px;
                     border-top: 1px solid #2f354b;
                     padding: 34px 0 50px 0;
-
-                    @media (max-width: 1400px) {
-                        flex-direction: column;
-                        gap: 30px;
-                    }
 
                     @media (max-width: 576px) {
                         padding: 20px 0 30px 0;
@@ -128,10 +124,6 @@
                         font-weight: 400;
                         line-height: 26px;
                         color: #bfbfbf;
-
-                        @media (max-width: 1400px) {
-                            max-width: none;
-                        }
                     }
                 }
             }

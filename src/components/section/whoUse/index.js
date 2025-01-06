@@ -50,11 +50,11 @@ export default function WhoUse() {
                                         <Image src={item.img} alt={item.title} />
                                     </div>
                                     <div className={styles.whoUseBoxContent}>
-                                        <div className={styles.whoUseIcon}>{item.icon}</div>
                                         <div className={styles.whoUseBoxText}>
+                                            <div className={styles.whoUseIcon}>{item.icon}</div>
                                             <h3>{item.title}</h3>
-                                            <p>{item.description}</p>
                                         </div>
+                                        <p>{item.description}</p>
                                     </div>
                                 </div>
                             ))}
