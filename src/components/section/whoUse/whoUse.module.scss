@@ -161,15 +161,10 @@
                         }
 
                         h3 {
-                            font-size: 24px;
                             font-weight: 500;
-                            line-height: 29px;
+                            font-size: 20px;
+                            line-height: 24px;
                             color: #ffffff;
-                            
-                            @media (max-width: 576px) {
-                                font-size: 20px;
-                                line-height: 24px;
-                            }
                         }
                     }
 
