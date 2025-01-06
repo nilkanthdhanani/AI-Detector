@@ -31,12 +31,12 @@
 
         &::after {
             width: 100%;
-            max-width: 740px;
+            max-width: 660px;
         }
 
         &::before {
             width: calc(100% - 40px);
-            max-width: 660px;
+            max-width: 560px;
         }
 
         .whyChooseBox {
@@ -149,8 +149,8 @@
                 max-width: 300px;
 
                 @media (max-width: 576px) {
-                    font-size: 30px;
-                    line-height: 50px;
+                    font-size: 28px;
+                    line-height: 38px;
                 }
             }
         }

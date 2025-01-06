@@ -1,6 +1,6 @@
 .loginSignin {
     button {
-        padding: 16px 30px;
+        padding: 14px 30px;
         border-radius: 60px;
         cursor: pointer;
         border: none;
@@ -21,7 +21,7 @@
         }
 
         @media (max-width: 576px) {
-            padding: 12px 18px;
+            padding: 12px 24px;
         }
     }
 
@@ -99,12 +99,16 @@
 
 .loginSignin2 {
     button {
-        padding: 16px 30px;
+        padding: 14px 30px;
         border-radius: 60px;
         cursor: pointer;
         border: none;
         position: relative;
         background-color: transparent;
+
+        @media (max-width: 576px) {
+            padding: 12px 24px;
+        }
 
         span {
             position: relative;
@@ -202,13 +206,18 @@
         gap: 10px;
 
         @media (max-width: 576px) {
-            padding: 12px 18px;
+            padding: 12px 24px;
         }
 
         svg {
-            max-width: 30px;
+            width: 30px;
             position: relative;
             z-index: 2;
+
+            @media (max-width: 576px) {
+                width: 25px;
+                height: 25px;
+            }
         }
 
         span {
@@ -260,20 +269,14 @@
 .aiBoxInnerBtn {
     button {
         position: relative;
-        padding: 16px 30px;
+        padding: 14px 30px;
         border-radius: 68px;
         cursor: pointer;
         border: none;
         background-color: transparent;
 
         @media (max-width: 576px) {
-            padding: 12px 18px;
-        }
-
-        svg {
-            max-width: 30px;
-            position: relative;
-            z-index: 2;
+            padding: 12px 24px;
         }
 
         span {
@@ -327,7 +330,7 @@
 .footerForm,
 .planDivPrice {
     button {
-        padding: 16px 30px;
+        padding: 14px 30px;
         border-radius: 68px;
         color: #fff;
         cursor: pointer;
@@ -341,7 +344,7 @@
         }
 
         @media (max-width: 576px) {
-            padding: 12px 18px;
+            padding: 12px 24px;
         }
 
         span {
@@ -390,7 +393,7 @@
 
 .plansDivBox1Select {
     button {
-        padding: 16px 30px;
+        padding: 14px 30px;
         border-radius: 28px;
         background-color: transparent;
         cursor: pointer;
@@ -398,7 +401,7 @@
         position: relative;
 
         @media (max-width: 576px) {
-            padding: 12px 18px;
+            padding: 12px 24px;
         }
 
         span {
