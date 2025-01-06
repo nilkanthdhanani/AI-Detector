@@ -8,9 +8,13 @@
     }
 
     .powerfulDiv {
-        padding: 120px 20px;
+        padding: 120px 0;
         border-radius: 30px;
         background: #111427b2;
+
+        @media (max-width: 1024px) {
+            padding: 80px 0;
+        }
 
         @media (max-width: 576px) {
             padding: 40px 0;
@@ -28,7 +32,10 @@
 
             .powerfulDivHead {
                 max-width: 440px;
-                width: 100%;
+
+                @media (max-width: 1024px) {
+                    max-width: none;
+                }
 
                 h2 {
                     margin-bottom: 15px;
@@ -38,6 +45,10 @@
                     font-size: 40px;
                     font-weight: 600;
                     line-height: 50px;
+
+                    @media (max-width: 1024px) {
+                        max-width: 440px;
+                    }
 
                     @media (max-width: 576px) {
                         font-size: 28px;
@@ -59,16 +70,15 @@
             }
 
             .powerfulDivList {
-                width: 100%;
-                max-width: 900px;
+                max-width: 850px;
 
                 .powerfulDivList1 {
                     display: flex;
                     justify-content: space-between;
-                    flex-wrap: wrap;
                     gap: 20px;
                     border-top: 1px solid #2f354b;
                     padding: 34px 0 50px 0;
+                    flex-wrap: wrap;
 
                     @media (max-width: 576px) {
                         padding: 20px 0 30px 0;
@@ -80,7 +90,6 @@
                     }
 
                     .powerfulDivList1Head {
-                        width: 100%;
                         max-width: 400px;
 
                         h3 {

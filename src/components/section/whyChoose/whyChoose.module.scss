@@ -5,7 +5,7 @@
         padding: 70px 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 60px;
+        gap: 40px;
         position: relative;
 
         @media (max-width: 576px) {
@@ -31,12 +31,12 @@
 
         &::after {
             width: 100%;
-            max-width: 660px;
+            max-width: 680px;
         }
 
         &::before {
             width: calc(100% - 40px);
-            max-width: 560px;
+            max-width: 600px;
         }
 
         .whyChooseBox {
@@ -63,7 +63,7 @@
                 background: #0e1020;
                 border: 1px solid #2f354b;
                 border-radius: 20px;
-                padding: 30px;
+                padding: 35px;
 
                 @media (max-width: 1024px) {
                     max-width: 480px;
