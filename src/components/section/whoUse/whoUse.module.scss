@@ -80,6 +80,11 @@
                     flex-direction: column;
                 }
 
+                @media (max-width: 768px) {
+                    max-width: 500px;
+                    margin: 0 auto;
+                }
+
                 @media (max-width: 576px) {
                     padding: 20px;
                 }
