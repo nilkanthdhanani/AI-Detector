@@ -161,14 +161,15 @@
                         }
 
                         h3 {
-<<<<<<< HEAD
-                            font-size: 20px;
-=======
-                            font-size: 22px;
->>>>>>> smallUI
+                            font-size: 24px;
                             font-weight: 500;
                             line-height: 29px;
                             color: #ffffff;
+                            
+                            @media (max-width: 576px) {
+                                font-size: 20px;
+                                line-height: 24px;
+                            }
                         }
                     }
 
