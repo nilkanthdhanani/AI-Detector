@@ -4,8 +4,10 @@ import styles from './header.module.scss'
 import Logo from '@/assets/images/svg/logo'
 import MenuIcon from '@/assets/images/svg/menuIcon'
 import Sidebar from '../sidebar'
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
+  const pathname = usePathname();
   return (
     <>
       <header className={styles.header}>
@@ -17,7 +19,7 @@ export default function Header() {
               </Link>
             </div>
             <nav>
-              <Link href={"/"}>Home</Link>
+              <Link href={"/"} className={pathname === "/" ? styles.active : ""}>Home</Link>
               <Link href={"/"}>Humanize</Link>
               <Link href={"/"}>Pricing</Link>
               <Link href={"/"}>Blog</Link>
