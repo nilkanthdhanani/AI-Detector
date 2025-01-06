@@ -7,22 +7,25 @@ import HumanizeIcon from '@/assets/images/svg/humanizeIcon'
 import PriceIcon from '@/assets/images/svg/priceIcon'
 import BlogIcon from '@/assets/images/svg/blogIcon'
 import ContactIcon from '@/assets/images/svg/contactIcon'
+import { usePathname } from 'next/navigation'
 
-export default function Sidebar() {
+export default function Sidebar({ sidebarOpen, sidebarClose }) {
+    const pathname = usePathname();
+
     return (
-        <aside className={styles.sidebar}>
+        <aside className={`${styles.sidebar} ${sidebarOpen ? styles.open : ""}`}>
             <div className={styles.sidebarDiv}>
                 <div>
                     <div className={styles.sidebarDivHead}>
                         <Link href={"/"} aria-label='Logo'>
                             <Logo />
                         </Link>
-                        <div className={styles.closeBtn}>
+                        <div className={styles.closeBtn} onClick={sidebarClose}>
                             <CloseIcon />
                         </div>
                     </div>
                     <nav>
-                        <Link href={"/"}><HomeIcon /> Home</Link>
+                        <Link href={"/"} className={pathname === "/" ? styles.active : ""}><HomeIcon /> Home</Link>
                         <Link href={"/"}><HumanizeIcon /> Humanize</Link>
                         <Link href={"/"}><PriceIcon /> Pricing</Link>
                         <Link href={"/"}><BlogIcon /> Blog</Link>

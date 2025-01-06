@@ -5,9 +5,16 @@ import Logo from '@/assets/images/svg/logo'
 import MenuIcon from '@/assets/images/svg/menuIcon'
 import Sidebar from '../sidebar'
 import { usePathname } from 'next/navigation'
+import { useState } from 'react'
 
 export default function Header() {
   const pathname = usePathname();
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen (!sidebarOpen);
+  }
+
   return (
     <>
       <header className={styles.header}>
@@ -33,13 +40,13 @@ export default function Header() {
                 <button type="button" className={styles.loginBtn}><span>LOG IN</span></button>
               </Link>
             </div>
-            <div className={styles.menu}>
+            <div className={styles.menu} onClick={toggleSidebar}>
               <MenuIcon />
             </div>
           </div>
         </div>
       </header>
-      <Sidebar />
+      <Sidebar sidebarOpen={sidebarOpen} sidebarClose={toggleSidebar} />
     </>
   )
 }
