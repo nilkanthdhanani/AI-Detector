@@ -20,8 +20,8 @@
             text-align: center;
 
             @media (max-width: 576px) {
-                font-size: 34px;
-                line-height: 44px;
+                font-size: 28px;
+                line-height: 38px;
             }
         }
 
@@ -166,6 +166,12 @@
                     font-weight: 500;
                     line-height: 29px;
                     color: #fff;
+
+                    @media (max-width: 576px) {
+                        font-size: 20px;
+                        line-height: 24px;
+                        margin-bottom: 15px;
+                    }
                 }
 
                 p {

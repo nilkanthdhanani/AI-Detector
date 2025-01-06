@@ -35,8 +35,8 @@
                 text-align: center;
 
                 @media (max-width: 576px) {
-                    font-size: 34px;
-                    line-height: 44px;
+                    font-size: 28px;
+                    line-height: 38px;
                 }
             }
         }
@@ -64,7 +64,8 @@
                 .plansDivBox1Select {
                     max-width: fit-content;
                     display: flex;
-                    gap: 20px;
+                    flex-wrap: wrap;
+                    gap: 0 20px;
                     border-radius: 28px;
                     background: #2c2e3a;
                     margin-bottom: 50px;
@@ -111,7 +112,7 @@
             .plansDivBox2 {
                 .planDiv {
                     padding: 30px;
-                    margin-bottom: 35px;
+                    margin-bottom: 40px;
                     background: #111427b2;
                     border: 1px solid #2f354b;
                     border-radius: 22px;
@@ -164,6 +165,10 @@
                         gap: 24px;
                         align-items: center;
 
+                        @media (max-width: 576px) {
+                            gap: 20px;
+                        }
+
                         .radio {
                             width: 30px;
                             height: 30px;
@@ -178,6 +183,11 @@
                             font-weight: 600;
                             line-height: 29px;
                             color: #fff;
+
+                            @media (max-width: 576px) {
+                                font-size: 20px;
+                                line-height: 24px;
+                            }
                         }
                     }
 
