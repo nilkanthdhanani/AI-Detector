@@ -63,11 +63,16 @@ const plans = [
 
 export default function Plans() {
     const [active, setActive] = useState(0);
+    const [planActive, setPlanActive] = useState('monthly');
 
     const toggleActive = (index) => {
-        setActive (active === index ? null : index);
+        setActive(active === index ? null : index);
     }
-    
+
+    const togglePlanActive = (planType) => {
+        setPlanActive(planType);
+    }
+
     return (
         <section className={styles.plans}>
             <div className={styles.container2}>
@@ -79,8 +84,12 @@ export default function Plans() {
                         <div className={styles.plansDivBoxes}>
                             <div className={styles.plansDivBox1}>
                                 <div className={styles.plansDivBox1Select}>
-                                    <button type="button"><span>Monthly</span></button>
-                                    <button type="button"><span>Yearly</span></button>
+                                    <button type="button" onClick={() => togglePlanActive('monthly')} className={`${planActive === 'monthly' ? styles.active : ""}`} >
+                                        <span>Monthly</span>
+                                    </button>
+                                    <button type="button" onClick={() => togglePlanActive('yearly')} className={`${planActive === "yearly" ? styles.active : ""}`} >
+                                        <span>Yearly</span>
+                                    </button>
                                 </div>
                                 <h3>Features</h3>
                                 <div className={styles.feturesDiv}>

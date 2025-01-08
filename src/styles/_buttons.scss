@@ -7,7 +7,7 @@
         cursor: pointer;
         border: none;
         position: relative;
-        background-color: transparent;
+        background-color: #0E1020;
 
         span {
             position: relative;
@@ -105,7 +105,7 @@
         cursor: pointer;
         border: none;
         position: relative;
-        background-color: transparent;
+        background-color: #0E1020;
 
         @media (max-width: 576px) {
             padding: 12px 24px;
@@ -199,7 +199,7 @@
         color: #fff;
         cursor: pointer;
         border: none;
-        background-color: transparent;
+        background-color: #0E1020;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -270,7 +270,7 @@
         border-radius: 68px;
         cursor: pointer;
         border: none;
-        background-color: transparent;
+        background-color: #0E1020;
 
         @media (max-width: 576px) {
             padding: 12px 24px;
@@ -331,12 +331,8 @@
         cursor: pointer;
         border: none;
         text-transform: uppercase;
-        background-color: transparent;
+        background-color: #0E1020;
         position: relative;
-
-        @media (max-width: 1120px) {
-            padding: 15px 20px;
-        }
 
         @media (max-width: 576px) {
             padding: 12px 24px;
@@ -430,7 +426,7 @@
             }
         }
 
-        &:first-child {
+        &.active {
             &::after {
                 content: "";
                 position: absolute;
