@@ -235,7 +235,7 @@
             z-index: 1;
             width: 100%;
             height: 100%;
-            border-radius: 60px;
+            border-radius: 68px;
             opacity: 0;
             background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
             transition: all 0.5s ease-in-out;
@@ -243,7 +243,7 @@
 
         &::before {
             content: "";
-            border-radius: 60px;
+            border-radius: 68px;
             padding: 2px;
             z-index: 2;
             inset: 0;
@@ -292,7 +292,7 @@
             z-index: 1;
             width: 100%;
             height: 100%;
-            border-radius: 60px;
+            border-radius: 68px;
             opacity: 0;
             background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
             transition: all 0.5s ease-in-out;
@@ -300,7 +300,7 @@
 
         &::before {
             content: "";
-            border-radius: 60px;
+            border-radius: 68px;
             padding: 2px;
             z-index: 2;
             inset: 0;
@@ -353,14 +353,14 @@
             z-index: 1;
             width: 100%;
             height: 100%;
-            border-radius: 60px;
+            border-radius: 68px;
             background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
             transition: all 0.5s ease-in-out;
         }
 
         &::before {
             content: "";
-            border-radius: 60px;
+            border-radius: 68px;
             padding: 2px;
             z-index: 2;
             inset: 0;
@@ -402,7 +402,7 @@
 
         &::before {
             content: "";
-            border-radius: 60px;
+            border-radius: 28px;
             padding: 2px;
             z-index: 2;
             inset: 0;
@@ -435,7 +435,7 @@
                 z-index: 1;
                 width: 100%;
                 height: 100%;
-                border-radius: 60px;
+                border-radius: 28px;
                 background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
                 transition: all 0.5s ease-in-out;
             }
