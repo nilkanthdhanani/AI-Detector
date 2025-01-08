@@ -14,15 +14,8 @@
             background: -webkit-linear-gradient(180deg, #bfabff 0%, #efebff 100%);
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-size: 40px;
-            font-weight: 600;
-            line-height: 50px;
+            @include commonHead;
             text-align: center;
-
-            @media (max-width: 576px) {
-                font-size: 28px;
-                line-height: 38px;
-            }
         }
     }
 
@@ -97,9 +90,7 @@
                 }
 
                 p {
-                    font-size: 18px;
-                    font-weight: 400;
-                    line-height: 28px;
+                    @include commonPera;
                     color: #bfbfbf;
 
                     @media (max-width: 576px) {

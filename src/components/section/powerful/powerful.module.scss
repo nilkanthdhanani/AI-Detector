@@ -1,6 +1,5 @@
 @import "../../../styles/main.scss";
 
-
 .powerful {
     margin: 120px 0;
 
@@ -32,7 +31,7 @@
             }
 
             .powerfulDivHead {
-                max-width: 440px;
+                max-width: 480px;
 
                 @media (max-width: 1024px) {
                     max-width: none;
@@ -43,24 +42,15 @@
                     background: -webkit-linear-gradient(180deg, #bfabff 0%, #efebff 100%);
                     background-clip: text;
                     -webkit-text-fill-color: transparent;
-                    font-size: 40px;
-                    font-weight: 600;
-                    line-height: 50px;
+                    @include commonHead;
 
                     @media (max-width: 1024px) {
                         max-width: 440px;
                     }
-
-                    @media (max-width: 576px) {
-                        font-size: 28px;
-                        line-height: 38px;
-                    }
                 }
 
                 p {
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 26px;
+                    @include commonPera;
                     color: #bfbfbf;
                     margin-bottom: 40px;
 
@@ -118,9 +108,7 @@
 
                     p {
                         max-width: 400px;
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 26px;
+                        @include fontPera;
                         color: #bfbfbf;
                     }
                 }

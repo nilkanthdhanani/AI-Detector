@@ -32,9 +32,7 @@
             }
 
             p {
-                font-size: 20px;
-                font-weight: 400;
-                line-height: 24px;
+                @include commonPera;
                 color: #b2b2b5;
 
                 @media (max-width: 576px) {
@@ -113,9 +111,7 @@
         .footerMainText {
             p {
                 margin-top: 20px;
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 30px;
+                @include commonPera;
                 color: #b2b2b5;
                 max-width: 550px;
 

@@ -75,9 +75,7 @@
                 border-top: 1px solid #2f354b;
                 padding: 20px;
                 color: #999999;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 22px;
+                @include fontNav;
                 transition: all 0.4s ease-in-out;
 
                 &:last-child {

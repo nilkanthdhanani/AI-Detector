@@ -1,0 +1,50 @@
+@mixin fontBtn {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+@mixin fontNav {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+@mixin fontH1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 65px;
+
+    @media (max-width: 576px) {
+        font-size: 34px;
+        line-height: 46px;
+    }
+}
+
+@mixin commonPera {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+
+    @media (max-width: 576px) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+@mixin fontPera {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+@mixin commonHead {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+
+    @media (max-width: 576px) {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}

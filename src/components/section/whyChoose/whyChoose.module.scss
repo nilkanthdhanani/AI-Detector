@@ -125,9 +125,7 @@
                 }
 
                 p {
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 26px;
+                    @include fontPera;
                     color: #bfbfbf;
                 }
             }
@@ -142,16 +140,10 @@
                 background: -webkit-linear-gradient(180deg, #bfabff 0%, #efebff 100%);
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
-                font-size: 40px;
-                font-weight: 600;
+                @include commonHead;
                 line-height: 60px;
                 text-align: center;
                 max-width: 300px;
-
-                @media (max-width: 576px) {
-                    font-size: 28px;
-                    line-height: 38px;
-                }
             }
         }
     }
