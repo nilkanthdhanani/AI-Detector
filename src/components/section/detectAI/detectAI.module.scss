@@ -122,40 +122,42 @@
                 padding: 40px 25px;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                justify-content: space-between;
                 text-align: center;
 
                 @media (max-width: 576px) {
                     padding: 30px 20px 40px 20px;
                 }
 
-                .imgWrapper {
-                    height: 80px;
-                    width: 80px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-bottom: 40px;
-                    background: #111427b2;
-                    border-radius: 22%;
-                    border: 1px solid #2f354b;
-                    box-shadow: 0px 0px 20px 0px #0d9cef4d;
+                .detectBoxInnerText {
+                    .imgWrapper {
+                        margin: 0 auto;
+                        height: 80px;
+                        width: 80px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 40px;
+                        background: #111427b2;
+                        border-radius: 22%;
+                        border: 1px solid #2f354b;
+                        box-shadow: 0px 0px 20px 0px #0d9cef4d;
 
-                    svg {
-                        max-width: 40px;
+                        svg {
+                            max-width: 40px;
+                        }
+                    }
+
+                    h3 {
+                        @include commonSubHead;
+                        margin-bottom: 20px;
+                        color: #fff;
+
+                        @media (max-width: 576px) {
+                            margin-bottom: 15px;
+                        }
                     }
                 }
-
-                h3 {
-                    @include commonSubHead;
-                    margin-bottom: 20px;
-                    color: #fff;
-
-                    @media (max-width: 576px) {
-                        margin-bottom: 15px;
-                    }
-                }
-
                 p {
                     @include fontPera;
                     color: #bfbfbf;

@@ -41,7 +41,7 @@
         .plansDivBoxes {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            align-items: center;
+            align-items: flex-start;
             gap: 40px;
 
             @media (max-width: 1024px) {
@@ -109,6 +109,16 @@
             }
 
             .plansDivBox2 {
+                @media (max-width: 1024px) {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                }
+
+                @media (max-width: 768px) {
+                    grid-template-columns: 1fr;
+                }
+
                 .planDiv {
                     padding: 30px;
                     margin-bottom: 35px;
@@ -125,10 +135,21 @@
                         margin-bottom: 0;
                     }
 
-                    @media (max-width: 576px) {
+                    @media (max-width: 1024px) {
                         flex-direction: column;
                         align-items: flex-start;
                         padding: 20px;
+                        margin-bottom: 0;
+                    }
+
+                    @media (max-width: 768px) {
+                        flex-direction: row;
+                        align-items: center;
+                    }
+
+                    @media (max-width: 576px) {
+                        flex-direction: column;
+                        align-items: flex-start;
                     }
 
                     &.active {
@@ -195,11 +216,6 @@
                         gap: 20px;
                         align-items: center;
                         flex-wrap: wrap;
-
-                        @media (max-width: 576px) {
-                            width: 100%;
-                            justify-content: space-between;
-                        }
 
                         .planDivPriceText {
                             display: flex;

@@ -53,6 +53,20 @@
             }
 
             .updateDivBox {
+                &:last-child {
+                    @media (max-width: 1024px) {
+                        grid-column: span 2;
+                        max-width: 50%;
+                        margin: 0 auto;
+                    }
+
+                    @media (max-width: 768px) {
+                        grid-column: auto;
+                        max-width: none;
+                        margin: 0;
+                    }
+                }
+
                 .updateDivBoxImage {
                     margin-bottom: 14px;
 

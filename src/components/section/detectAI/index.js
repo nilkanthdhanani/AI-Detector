@@ -33,10 +33,12 @@ export default function DetectAI() {
                     {detectData.map((item, index) => (
                         <div key={index} className={styles.detectBox}>
                             <div className={styles.detectBoxInner}>
-                                <div className={styles.imgWrapper}>
-                                    {item.icon}
+                                <div className={styles.detectBoxInnerText}>
+                                    <div className={styles.imgWrapper}>
+                                        {item.icon}
+                                    </div>
+                                    <h3>{item.title}</h3>
                                 </div>
-                                <h3>{item.title}</h3>
                                 <p>{item.description}</p>
                             </div>
                         </div>
