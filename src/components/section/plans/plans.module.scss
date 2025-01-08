@@ -74,9 +74,7 @@
                 }
 
                 h3 {
-                    font-size: 24px;
-                    font-weight: 600;
-                    line-height: 29px;
+                    @include commonSubHead;
                     color: #fff;
                     margin-bottom: 25px;
                 }
@@ -182,9 +180,7 @@
                         }
 
                         h3 {
-                            font-size: 24px;
-                            font-weight: 600;
-                            line-height: 29px;
+                            @include commonSubHead;
                             color: #fff;
 
                             @media (max-width: 576px) {
@@ -211,9 +207,9 @@
                             gap: 8px;
 
                             h4 {
-                                font-size: 26px;
+                                font-size: 24px;
                                 font-weight: 700;
-                                line-height: 32px;
+                                line-height: 30px;
                                 color: #fff;
 
                                 @media (max-width: 576px) {

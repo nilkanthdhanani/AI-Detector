@@ -48,3 +48,14 @@
         line-height: 38px;
     }
 }
+
+@mixin commonSubHead {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 29px;
+
+    @media (max-width: 576px) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
