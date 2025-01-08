@@ -22,7 +22,7 @@ export default function Review() {
                                 <h3>Kevin Gohil</h3>
                                 <div className={styles.stars}>
                                     {Array.from({ length: 5 }).map((_, index) => (
-                                        <StarIcon />
+                                        <StarIcon key={index} />
                                     ))}
                                 </div>
                             </div>
