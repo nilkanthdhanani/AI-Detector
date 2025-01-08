@@ -1,192 +1,95 @@
 @import "./typography";
 
-.loginSignin {
+.loginSignin,
+.loginSignin2 {
     button {
+        position: relative;
         padding: 14px 30px;
         border-radius: 60px;
-        cursor: pointer;
         border: none;
-        position: relative;
-        background-color: #0E1020;
-
-        span {
-            position: relative;
-            z-index: 3;
-            text-transform: uppercase;
-            @include fontBtn;
-            color: #fff;
-        }
-
-        @media (max-width: 1200px) {
-            padding: 12px 20px;
-        }
+        background-color: #0e1020;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
 
         @media (max-width: 576px) {
             padding: 12px 24px;
         }
+
+        span {
+            position: relative;
+            z-index: 3;
+            @include fontBtn;
+            color: #fff;
+            text-transform: uppercase;
+        }
     }
 
     .signinBtn {
-        &::after {
+        &::after,
+        &::before {
             content: "";
             position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
             width: 100%;
             height: 100%;
             border-radius: 60px;
-            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
             transition: all 0.5s ease-in-out;
         }
 
-        &::before {
-            content: "";
-            border-radius: 60px;
+        &::after {
+            z-index: 1;
             padding: 2px;
-            z-index: 2;
-            inset: 0;
-            position: absolute;
             background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
-            mask:
-                linear-gradient(#fff 0 0) content-box,
-                linear-gradient(#fff 0 0);
-            mask-composite: exclude;
+        }
+
+        &::before {
+            z-index: 2;
+            background: #0e1020;
+            opacity: 0;
         }
 
         &:hover {
-            &::after {
-                opacity: 0;
+            &::before {
+                opacity: 1;
             }
         }
     }
 
     .loginBtn {
-        &::after {
+        &::after,
+        &::before {
             content: "";
             position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
             width: 100%;
             height: 100%;
             border-radius: 60px;
-            opacity: 0;
-            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
             transition: all 0.5s ease-in-out;
         }
 
-        &::before {
-            content: "";
-            border-radius: 60px;
+        &::after {
+            z-index: 1;
             padding: 2px;
-            z-index: 2;
-            inset: 0;
-            position: absolute;
             background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
-            mask:
-                linear-gradient(#fff 0 0) content-box,
-                linear-gradient(#fff 0 0);
-            mask-composite: exclude;
+        }
+
+        &::before {
+            z-index: 2;
+            background: #0e1020;
         }
 
         &:hover {
-            &::after {
-                opacity: 1;
+            &::before {
+                opacity: 0;
             }
         }
     }
 }
 
-.loginSignin2 {
+.loginSignin {
     button {
-        padding: 14px 30px;
-        border-radius: 60px;
-        cursor: pointer;
-        border: none;
-        position: relative;
-        background-color: #0E1020;
-
-        @media (max-width: 576px) {
-            padding: 12px 24px;
-        }
-
-        span {
-            position: relative;
-            z-index: 3;
-            @include fontBtn;
-            color: #fff;
-        }
-    }
-
-    .signinBtn {
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            border-radius: 60px;
-            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
-            transition: all 0.5s ease-in-out;
-        }
-
-        &::before {
-            content: "";
-            border-radius: 60px;
-            padding: 2px;
-            z-index: 2;
-            inset: 0;
-            position: absolute;
-            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
-            mask:
-                linear-gradient(#fff 0 0) content-box,
-                linear-gradient(#fff 0 0);
-            mask-composite: exclude;
-        }
-
-        &:hover {
-            &::after {
-                opacity: 0;
-            }
-        }
-    }
-
-    .loginBtn {
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            border-radius: 60px;
-            opacity: 0;
-            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
-            transition: all 0.5s ease-in-out;
-        }
-
-        &::before {
-            content: "";
-            border-radius: 60px;
-            padding: 2px;
-            z-index: 2;
-            inset: 0;
-            position: absolute;
-            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
-            mask:
-                linear-gradient(#fff 0 0) content-box,
-                linear-gradient(#fff 0 0);
-            mask-composite: exclude;
-        }
-
-        &:hover {
-            &::after {
-                opacity: 1;
-            }
+        @media (max-width: 1200px) {
+            padding: 12px 20px;
         }
     }
 }
@@ -199,14 +102,11 @@
         color: #fff;
         cursor: pointer;
         border: none;
-        background-color: #0E1020;
+        background-color: #0e1020;
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 10px;
-
-        @media (max-width: 576px) {
-            padding: 12px 24px;
-        }
 
         svg {
             width: 30px;
@@ -227,37 +127,30 @@
             color: #fff;
         }
 
-        &::after {
+        &::after,
+        &::before {
             content: "";
             position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
             width: 100%;
             height: 100%;
-            border-radius: 68px;
-            opacity: 0;
-            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
+            border-radius: 60px;
             transition: all 0.5s ease-in-out;
         }
 
-        &::before {
-            content: "";
-            border-radius: 68px;
+        &::after {
+            z-index: 1;
             padding: 2px;
-            z-index: 2;
-            inset: 0;
-            position: absolute;
             background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
-            mask:
-                linear-gradient(#fff 0 0) content-box,
-                linear-gradient(#fff 0 0);
-            mask-composite: exclude;
+        }
+
+        &::before {
+            z-index: 2;
+            background: #0e1020;
         }
 
         &:hover {
-            &::after {
-                opacity: 1;
+            &::before {
+                opacity: 0;
             }
         }
     }
@@ -268,9 +161,12 @@
         position: relative;
         padding: 14px 30px;
         border-radius: 68px;
-        cursor: pointer;
         border: none;
-        background-color: #0E1020;
+        background-color: #0e1020;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
 
         @media (max-width: 576px) {
             padding: 12px 24px;
@@ -284,37 +180,30 @@
             color: #fff;
         }
 
-        &::after {
+        &::after,
+        &::before {
             content: "";
             position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
             width: 100%;
             height: 100%;
             border-radius: 68px;
-            opacity: 0;
-            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
             transition: all 0.5s ease-in-out;
         }
 
-        &::before {
-            content: "";
-            border-radius: 68px;
+        &::after {
+            z-index: 1;
             padding: 2px;
-            z-index: 2;
-            inset: 0;
-            position: absolute;
             background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
-            mask:
-                linear-gradient(#fff 0 0) content-box,
-                linear-gradient(#fff 0 0);
-            mask-composite: exclude;
+        }
+
+        &::before {
+            z-index: 2;
+            background: #0e1020;
         }
 
         &:hover {
-            &::after {
-                opacity: 1;
+            &::before {
+                opacity: 0;
             }
         }
     }
@@ -328,11 +217,67 @@
         padding: 14px 30px;
         border-radius: 68px;
         color: #fff;
+        position: relative;
+        border: none;
+        background-color: #0e1020;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        @media (max-width: 576px) {
+            padding: 12px 24px;
+        }
+
+        span {
+            position: relative;
+            z-index: 3;
+            @include fontBtn;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 60px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        &::after {
+            z-index: 1;
+            padding: 2px;
+            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
+        }
+
+        &::before {
+            z-index: 2;
+            background: #0e1020;
+            opacity: 0;
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.plansDivBox1Select {
+    button {
+        padding: 14px 30px;
+        border-radius: 28px;
+        background-color: transparent;
         cursor: pointer;
         border: none;
-        text-transform: uppercase;
-        background-color: #0E1020;
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         @media (max-width: 576px) {
             padding: 12px 24px;
@@ -348,96 +293,18 @@
         &::after {
             content: "";
             position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
             width: 100%;
             height: 100%;
-            border-radius: 68px;
-            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
-            transition: all 0.5s ease-in-out;
-        }
-
-        &::before {
-            content: "";
-            border-radius: 68px;
-            padding: 2px;
-            z-index: 2;
-            inset: 0;
-            position: absolute;
-            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
-            mask:
-                linear-gradient(#fff 0 0) content-box,
-                linear-gradient(#fff 0 0);
-            mask-composite: exclude;
-        }
-
-        &:hover {
-            &::after {
-                opacity: 0;
-            }
-        }
-    }
-}
-
-.plansDivBox1Select {
-    button {
-        padding: 14px 30px;
-        border-radius: 28px;
-        background-color: transparent;
-        cursor: pointer;
-        border: none;
-        position: relative;
-
-        @media (max-width: 576px) {
-            padding: 12px 24px;
-        }
-
-        span {
-            position: relative;
-            z-index: 3;
-            @include fontBtn;
-            color: #fff;
-        }
-
-        &::before {
-            content: "";
             border-radius: 28px;
-            padding: 2px;
-            z-index: 2;
-            inset: 0;
-            position: absolute;
-            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
-            mask:
-                linear-gradient(#fff 0 0) content-box,
-                linear-gradient(#fff 0 0);
-            mask-composite: exclude;
             opacity: 0;
+            z-index: 1;
+            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
             transition: all 0.5s ease-in-out;
-
-            @media (max-width: 576px) {
-                opacity: 1;
-            }
-        }
-
-        &:hover {
-            &::before {
-                opacity: 1;
-            }
         }
 
         &.active {
             &::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 1;
-                width: 100%;
-                height: 100%;
-                border-radius: 28px;
-                background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
-                transition: all 0.5s ease-in-out;
+                opacity: 1;
             }
         }
     }
