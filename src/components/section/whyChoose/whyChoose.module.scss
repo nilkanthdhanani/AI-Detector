@@ -76,16 +76,17 @@
 
                 .whyChooseBoxHead {
                     display: flex;
-                    flex-wrap: wrap;
                     align-items: center;
                     gap: 24px;
                     margin-bottom: 25px;
 
                     @media (max-width: 576px) {
                         margin-bottom: 20px;
+                        gap: 15px;
                     }
 
                     .whyChooseIcon {
+                        flex-shrink: 0;
                         width: 70px;
                         height: 70px;
                         border-radius: 50%;
@@ -111,7 +112,6 @@
                     }
 
                     h3 {
-                        min-width: 240px;
                         font-size: 24px;
                         font-weight: 500;
                         line-height: 29px;

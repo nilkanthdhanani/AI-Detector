@@ -92,11 +92,8 @@
                     }
 
                     .powerfulDivList1Head {
-                        max-width: 400px;
-
-                        @media (max-width: 1400px) {
-                            max-width: none;
-                        }
+                        max-width: 350px;
+                        width: 100%;
 
                         h3 {
                             font-size: 24px;
