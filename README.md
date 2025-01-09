@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 
-Open [https://detect-ai-eight.vercel.app/] in your browser to see the result.
+Open [https://ai-detector-nine.vercel.app/] in your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
