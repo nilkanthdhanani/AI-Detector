@@ -4,7 +4,7 @@
 .loginSignin2 {
     button {
         position: relative;
-        padding: 14px 30px;
+        padding: 12px 24px;
         border-radius: 60px;
         border: none;
         background-color: #0e1020;
@@ -12,10 +12,6 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
-
-        @media (max-width: 576px) {
-            padding: 12px 24px;
-        }
 
         span {
             position: relative;
@@ -94,12 +90,11 @@
     }
 }
 
-.aiBoxBatch {
+.aiBoxBatch,
+.aiBoxInnerBtn {
     button {
         position: relative;
-        padding: 11px 20px;
         border-radius: 68px;
-        color: #fff;
         cursor: pointer;
         border: none;
         background-color: #0e1020;
@@ -107,70 +102,6 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
-
-        svg {
-            width: 30px;
-            position: relative;
-            z-index: 2;
-
-            @media (max-width: 576px) {
-                width: 25px;
-                height: 25px;
-            }
-        }
-
-        span {
-            position: relative;
-            z-index: 2;
-            text-transform: uppercase;
-            @include fontBtn;
-            color: #fff;
-        }
-
-        &::after,
-        &::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 60px;
-            transition: all 0.5s ease-in-out;
-        }
-
-        &::after {
-            z-index: 1;
-            padding: 2px;
-            background: linear-gradient(82deg, #00c0ff 0%, #421bb8 100%);
-        }
-
-        &::before {
-            z-index: 2;
-            background: #0e1020;
-        }
-
-        &:hover {
-            &::before {
-                opacity: 0;
-            }
-        }
-    }
-}
-
-.aiBoxInnerBtn {
-    button {
-        position: relative;
-        padding: 14px 30px;
-        border-radius: 68px;
-        border: none;
-        background-color: #0e1020;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-
-        @media (max-width: 576px) {
-            padding: 12px 24px;
-        }
 
         span {
             position: relative;
@@ -209,12 +140,35 @@
     }
 }
 
+.aiBoxBatch {
+    button {
+        padding: 7px 20px;
+
+        svg {
+            width: 30px;
+            position: relative;
+            z-index: 2;
+
+            @media (max-width: 576px) {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+.aiBoxInnerBtn {
+    button {
+        padding: 12px 24px;
+    }
+}
+
 .aiBoxInnerBtn2,
 .powerfulDivHead,
 .footerForm,
 .planDivPrice {
     button {
-        padding: 14px 30px;
+        padding: 12px 24px;
         border-radius: 68px;
         color: #fff;
         position: relative;
@@ -224,10 +178,6 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
-
-        @media (max-width: 576px) {
-            padding: 12px 24px;
-        }
 
         span {
             position: relative;
@@ -243,7 +193,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            border-radius: 60px;
+            border-radius: 68px;
             transition: all 0.5s ease-in-out;
         }
 
@@ -269,7 +219,7 @@
 
 .plansDivBox1Select {
     button {
-        padding: 14px 30px;
+        padding: 12px 24px;
         border-radius: 28px;
         background-color: transparent;
         cursor: pointer;
@@ -278,10 +228,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
-        @media (max-width: 576px) {
-            padding: 12px 24px;
-        }
 
         span {
             position: relative;

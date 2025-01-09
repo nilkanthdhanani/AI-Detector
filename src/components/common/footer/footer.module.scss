@@ -111,17 +111,12 @@
         .footerMainText {
             p {
                 margin-top: 20px;
-                @include commonPera;
+                @include fontPera;
                 color: #b2b2b5;
                 max-width: 550px;
 
                 @media (max-width: 1024px) {
                     max-width: 750px;
-                }
-
-                @media (max-width: 576px) {
-                    font-size: 16px;
-                    line-height: 20px;
                 }
             }
         }
@@ -180,7 +175,7 @@
     border-top: 1px solid #31393c;
 
     .footerCopyRightDiv {
-        padding: 20px 0 27px 0;
+        padding: 20px 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -188,15 +183,8 @@
         gap: 20px;
 
         p {
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 22px;
+            @include fontPera;
             color: #b2b2b5;
-
-            @media (max-width: 576px) {
-                font-size: 16px;
-                line-height: 20px;
-            }
         }
 
         .footerLink {

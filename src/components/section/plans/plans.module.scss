@@ -90,14 +90,8 @@
                         }
 
                         p {
-                            font-size: 18px;
-                            font-weight: 400;
-                            line-height: 26px;
                             color: #b2b2b5;
-
-                            @media (max-width: 576px) {
-                                font-size: 16px;
-                            }
+                            @include fontPera;
 
                             span {
                                 font-weight: 500;
